@@ -4,10 +4,10 @@ def line deli
   else
     names = ""
     deli.each.with_index(1) do |name, number|
-      names << "#{number}. #{name}"
+      names << " #{number}. #{name}"
     end
 
-    puts "The line is currently: #{names}"
+    puts "The line is currently:#{names}"
   end
 end
 
