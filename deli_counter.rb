@@ -1,13 +1,13 @@
 def line deli
-  if deli.length == 0
+  if deli.empty?
     puts 'The line is currently empty.'
   else
     names = ""
-    for number in 1..deli.length
-      names = "#{names} #{number}. #{deli[number - 1]}"
+    deli.each.with_index(1) do |name, number|
+      names << "#{number}. #{name}"
     end
 
-    puts "The line is currently:#{names}"
+    puts "The line is currently: #{names}"
   end
 end
 
